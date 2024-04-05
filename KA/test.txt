@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+</head>
+<body>as
+//Ahoj
+
+<h1>Welcome to my Test Page</h1>
+
+<p>This is a <font color="red">red</font> text.</p>
+<p>This is a <font color="blue">blue</font> text.</p>
+<p>This is a <font color="green">green</font> text.</p>
+asdasda
+<div>
+    <font color="purple">This is a purple text inside a div.</font>
+</div>
+
+<p>This is a regular text without any font tags.</p>
+
+</body>
+</html>

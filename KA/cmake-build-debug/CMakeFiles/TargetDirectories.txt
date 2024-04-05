@@ -1,0 +1,3 @@
+/Users/liborvyleta/Documents/Projekty/C/KA/cmake-build-debug/CMakeFiles/KA.dir
+/Users/liborvyleta/Documents/Projekty/C/KA/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/liborvyleta/Documents/Projekty/C/KA/cmake-build-debug/CMakeFiles/rebuild_cache.dir
