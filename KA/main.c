@@ -41,7 +41,7 @@ void odstranZnackyFontu(char* html) {
 int main() {
     FILE *inputFile = fopen("/Users/liborvyleta/Documents/Projekty/C/KA/test.txt", "r");
     if (inputFile == NULL) {
-        printf("Cannot open test.txt\n");
+        printf("Nelze otevrit test.txt\n");
         return 1;
     }
 
@@ -59,7 +59,7 @@ int main() {
 
     FILE *outputFile = fopen("/Users/liborvyleta/Documents/Projekty/C/KA/output.txt", "w");
     if (outputFile == NULL) {
-        printf("Cannot open output.txt\n");
+        printf("Nelze otevrit output.txt\n");
         free(html);
         return 1;
     }
