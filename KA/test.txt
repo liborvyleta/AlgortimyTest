@@ -17,8 +17,8 @@ asdasda
 <div>
     <font color="purple">This is a purple text inside a div.</font>
 </div>
-
+<FONT color="purple">This is a purple text inside a div.</FONT>
 <p>This is a regular text without any font tags.</p>
-
+<FONT>sadas</FONT>!!
 </body>
 </html>

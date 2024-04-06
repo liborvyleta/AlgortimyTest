@@ -8,22 +8,22 @@ enum State {
     EndTag
 };
 
-void odstranZnackyFontu(char* html) {
+void odstranZnackyFontu(char *html) {
     enum State state = Normal;
-    char* output = html;
-    char* input = html;
+    char *output = html;
+    char *input = html;
 
     while (*input != '\0') {
         switch (state) {
             case Normal:
-                if (strncmp(input, "<font", 5) == 0) {
+                if (strncmp(input, "<font", 5) == 0 || strncmp(input, "<FONT", 5) == 0) {
                     state = FontTag;
                 } else {
                     *output++ = *input;
                 }
                 break;
             case FontTag:
-                if (strncmp(input, "</font>", 7) == 0) {
+                if (strncmp(input, "</font>", 7) == 0 || strncmp(input, "</FONT>", 7) == 0) {
                     state = EndTag;
                 }
                 break;
@@ -35,11 +35,12 @@ void odstranZnackyFontu(char* html) {
         }
         input++;
     }
+
     *output = '\0';
 }
 
 int main() {
-    FILE *inputFile = fopen("/Users/liborvyleta/Documents/Projekty/C/KA/test.txt", "r");
+    FILE *inputFile = fopen("/Users/liborvyleta/Documents/Projekty/C/AlgortimyTest/KA/test.txt", "r");
     if (inputFile == NULL) {
         printf("Nelze otevrit test.txt\n");
         return 1;
@@ -57,7 +58,7 @@ int main() {
 
     odstranZnackyFontu(html);
 
-    FILE *outputFile = fopen("/Users/liborvyleta/Documents/Projekty/C/KA/output.txt", "w");
+    FILE *outputFile = fopen("/Users/liborvyleta/Documents/Projekty/C/AlgortimyTest/KA/output.txt", "w");
     if (outputFile == NULL) {
         printf("Nelze otevrit output.txt\n");
         free(html);
